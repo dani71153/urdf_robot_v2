@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="urdf_robot_v2">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.11878744502835 -0.00950436788509916 0.0821383092403481"
+        rpy="0 0 0" />
+      <mass
+        value="2.83771948238293" />
+      <inertia
+        ixx="0.0430332674788692"
+        ixy="1.40958244208271E-10"
+        ixz="2.13042531567189E-07"
+        iyy="0.0430332674788692"
+        iyz="2.1304253160933E-07"
+        izz="0.0857213097167914" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_robot_v2/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_robot_v2/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="wheel_1">
+    <inertial>
+      <origin
+        xyz="-1.7538E-06 1.7536E-06 0.0010792"
+        rpy="0 0 0" />
+      <mass
+        value="0.037695" />
+      <inertia
+        ixx="3.0971E-06"
+        ixy="-1.1843E-11"
+        ixz="-6.2069E-10"
+        iyy="3.0971E-06"
+        iyz="6.2066E-10"
+        izz="5.3487E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_robot_v2/meshes/wheel_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_robot_v2/meshes/wheel_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_wheel_1"
+    type="continuous">
+    <origin
+      xyz="0.083096 -0.071358 -0.2114"
+      rpy="2.5572 -0.559 0.89496" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel_1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="wheel_2">
+    <inertial>
+      <origin
+        xyz="-1.7538E-06 1.7536E-06 0.057179"
+        rpy="0 0 0" />
+      <mass
+        value="0.037695" />
+      <inertia
+        ixx="3.0971E-06"
+        ixy="4.9042E-11"
+        ixz="-6.2069E-10"
+        iyy="3.0972E-06"
+        iyz="6.2066E-10"
+        izz="5.3488E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_robot_v2/meshes/wheel_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_robot_v2/meshes/wheel_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_wheel_2"
+    type="continuous">
+    <origin
+      xyz="0.043427 -0.07138 0.15271"
+      rpy="0.42925 0.67987 0.6293" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel_2" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="wheel_3">
+    <inertial>
+      <origin
+        xyz="-1.7538E-06 1.7536E-06 0.0010792"
+        rpy="0 0 0" />
+      <mass
+        value="0.037695" />
+      <inertia
+        ixx="3.0972E-06"
+        ixy="-5.1012E-11"
+        ixz="-6.207E-10"
+        iyy="3.0972E-06"
+        iyz="6.2066E-10"
+        izz="5.3488E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_robot_v2/meshes/wheel_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_robot_v2/meshes/wheel_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_wheel_3"
+    type="continuous">
+    <origin
+      xyz="-0.32068 -0.071358 0.19238"
+      rpy="0 -0.7854 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel_3" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="wheel_4">
+    <inertial>
+      <origin
+        xyz="-1.7538E-06 1.7536E-06 0.045884"
+        rpy="0 0 0" />
+      <mass
+        value="0.037695" />
+      <inertia
+        ixx="3.0972E-06"
+        ixy="-1.4853E-11"
+        ixz="-6.207E-10"
+        iyy="3.0973E-06"
+        iyz="6.2066E-10"
+        izz="5.3489E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_robot_v2/meshes/wheel_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_robot_v2/meshes/wheel_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_wheel_4"
+    type="continuous">
+    <origin
+      xyz="-0.289 -0.071358 -0.17972"
+      rpy="-2.3563 0.013593 1.5572" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel_4" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+</robot>
